@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  
+    <div id="section1" class="crd1">
+                    
+                        <div>
+                            
+
+                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <a class="navbar-brand abc1" href="#">SnapMed</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="False" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                              <div class="navbar-nav abc2">
+                                <a class="nav-link active" href="#">
+                                  User
+                                  <span class="sr-only">(current)</span>
+                                </a>
+                                <a class="nav-link" href="#" onclick="display('section3')">Doctor</a>
+                                <a class="nav-link" href="#" onclick="display('section4')">Pharmacy</a>
+                                <a class="nav-link" href="#" onclick="display('section5')">Delivery</a>
+                                <a class="nav-link" href="#" onclick="display('section16')">Admin</a>
+                              
+                              </div>
+                            </div>
+                          </nav>
+
+
+
+
+                        
+
+                    <div class="hdd m-auto pt-5 d-flex flex-row justify-content-center">
+                        <div class="wrapper">
+                            <form action="">
+                              <h1>Login</h1>
+                              <div class="input-box">
+                                <input type="text" placeholder="Username / Contact No." required>
+                                <i class='bx bxs-user'></i>
+                              </div>
+                              <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt' ></i>
+                              </div>
+                              <div class="remember-forgot">
+                                <label><input type="checkbox">Remember Me</label>
+                                <a href="#">Forgot Password</a>
+                              </div>
+                              <button type="submit" class="btn" onclick="display('section6')">Login</button>
+                              <button class="btn text-center mt-3" onclick="display('section2')">Register</button>
+                              <div class="register-link">
+                                <p>Dont have an account? <a href="#" onclick="display('section2')">Register</a></p>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+           
+<div id="section2" class="crd1">
+  <div>
+    <h1 class="heading1">SnapMed</h1>
+</div>
+
+<div class="hdd mt-auto d-flex flex-row justify-content-center">
+  <div class="wrapper">
+      <form>
+        <h1 class="mb-3 doc">Register</h1>
+        <div class="text-left">
+        <label>FullName</label>
+        <input type="text"><br>
+        <label>Age</label>
+        <input type="number"><br>
+        <label>DOB : </label>
+        <input type="date"><br>
+        <label>Gender : </label>
+        <input type="radio">
+        <label>Male</label>
+        <input type="radio">
+        <label>Female</label><br>
+        <label>Address</label>
+        <input type="text"><br>
+        <label>Username</label>
+        <input type="text"><br>
+        <label>Password</label>
+        <input type="text"><br><br>
+        <label>Confirm</label>
+        <input type="text">
+
+      </div>
+
+      </form>
+
+<div class="text-center">
+ 
+  <button class="btn m-2 mt-4">Submit</button>
+  <button class="btn m-2" onclick="display('section1')">Go Back
+  </button>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div id="section3" class="crd1">
+  <div>
+    <h1 class="heading1">SnapMed</h1>
+</div>
+
+  <div class="hdd m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form action="">
+          <h1>Doctor Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username / Contact No." required>
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btn" onclick="display('section12')" >Login</button>
+          <button class="btn text-center mt-3" onclick="display('section1')">Go Back</button>
+          <div class="register-link">
+            <p>Dont have an account? <a href="#" onclick="display('section9')">Register</a></p>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+
+</div>
+
+
+
+<div id="section4" class="crd1">
+  <div>
+    <h1 class="heading1">SnapMed</h1>
+</div>
+
+  <div class="hdd m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form action="">
+          <h1>Pharmacy Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username / Contact No." required>
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btn" onclick="display('section13')">Login</button>
+          <button class="btn text-center mt-3" onclick="display('section1')">Go Back</button>
+          <div class="register-link">
+            <p>Dont have an account? <a href="#" onclick="display('section10')">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div id="section5" class="crd1">
+  <div>
+    <h1 class="heading1">SnapMed</h1>
+</div>
+
+  <div class="hdd m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form action="">
+          <h1>Delivery Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username / Contact No." required>
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btn" onclick="display('section14')">Login</button>
+          <button class="btn text-center mt-3" onclick="display('section1')">Go Back</button>
+          <div class="register-link">
+            <p>Dont have an account? <a href="#" onclick="display('section11')">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+</div>
+
+
+<div id="section6" class="crd1">
+  <div>
+    <h1 class="heading2">SnapMed</h1>
+</div>
+
+  <div class="hdd2 m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper crd2">
+        <form action="">
+          <h1>User View Page</h1>
+          <a>
+          <ol class="text-left p-3">
+            <li><a href="#">Health Tips</a></li>
+            <li><a href="#">Prescription</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Medicine Details</a></li>
+            <li><a href="#">Medical Bill</a></li>
+            <li><a href="#">Emergency Contacts</a></li>
+            <li><a href="#">Add Members</a></li>
+          </ol>
+        </a>
+          <button class="btn text-center mt-3" onclick="display('section8')">Vitals</button>
+          <button class="btn text-center mt-3" onclick="display('section7')">Appoinment</button>
+          
+        </form>
+      </div>
+    </div>
+
+</div>
+
+
+<div id="section7" class="crd1">
+    <div>
+      <h1 class="heading1">SnapMed</h1>
+  </div>
+  
+  <div class="hdd m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form>
+          <h1 class="mb-3 doc">Appointment</h1>
+          <div class="text-left">
+          <label>Name</label>
+          <input type="text"><br>
+          <label>ID</label>
+          <input type="number"><br>
+          <label>Prf.Date</label>
+          <input type="date"><br>
+          <label>Gender : </label>
+          <input type="radio">
+          <label>Male</label>
+          <input type="radio">
+          <label>Female</label><br>
+          <label>Phone</label>
+          <input type="text"><br>
+          <label>Category</label>
+          <input type="text"><br>
+          <label>Doc.Name</label>
+          <input type="text"><br>
+          <label>Password</label>
+          <input type="text">
+  
+        </div>
+  
+        </form>
+  
+  <div class="text-center">
+   
+    <button class="btn m-2 mt-4">Submit</button>
+    <button class="btn m-2" onclick="display('section1')">Go Back
+    </button>
+  </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div id="section8" class="crd1">
+    <div>
+      <h1 class="heading2">SnapMed</h1>
+  </div>
+  
+    <div class="hdd2 m-auto pt-3 d-flex flex-row justify-content-center">
+      <div class="wrapper crd2">
+          <form action="">
+            <h1>Vitals</h1>
+            
+            
+
+            <button class="btn text-center mt-3" onclick="display('section6')">Go Back</button>
+            
+          </form>
+        </div>
+      </div>
+  
+  </div>
+
+
+  <div id="section9" class="crd1">
+    <div>
+      <h1 class="heading1">SnapMed</h1>
+  </div>
+  
+  <div class="hdd m-auto pt-3 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form>
+          <h1 class="mb-3 doc">Register</h1>
+          <div class="text-left">
+          <label>Full Name</label>
+          <input type="text"><br>
+          <label>Age</label>
+          <input type="number"><br>
+          <label>DOB :</label>
+          <input type="date"><br>
+          <label>Gender : </label>
+          <input type="radio">
+          <label>Male</label>
+          <input type="radio">
+          <label>Female</label><br>
+          <label>Reg.No</label>
+          <input type="text"><br>
+          <label>Email</label>
+          <input type="text"><br>
+          <label>Phone No</label>
+          <input type="text"><br>
+          <label>Aadhaar No</label>
+          <input type="text"><br>
+          <label>Username</label>
+          <input type="text"><br>
+          <label>Password</label>
+          <input type="text"><br>
+          <label>Confirm</label>
+          <input type="text">
+  
+        </div>
+  
+        </form>
+  
+  <div class="text-center">
+   
+    <button class="btn m-2 mt-4">Submit</button>
+    <button class="btn m-2" onclick="display('section1')">Go Back
+    </button>
+  </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div id="section10" class="crd1">
+    <div>
+      <h1 class="heading1">SnapMed</h1>
+  </div>
+  
+  <div class="hdd pt-1 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form>
+          <h1 class="mb-3 doc">Register</h1>
+          <div class="text-left">
+          <label>FullName</label>
+          <input type="text"><br>
+          <label>Age</label>
+          <input type="number"><br>
+          <label>DOB</label>
+          <input type="date"><br>
+          <label>Gender : </label>
+          <input type="radio">
+          <label>Male</label>
+          <input type="radio">
+          <label>Female</label><br>
+          <label>Shop Address</label>
+          <input type="text"><br>
+          <label>Shop Reg.No</label>
+          <input type="text"><br>
+          <label>Pharmacy ID</label>
+          <input type="text"><br>
+          <label>Aadhaar No</label>
+          <input type="text"><br>
+          <label>Username</label>
+          <input type="text"><br>
+          <label>Password</label>
+          <input type="text"><br>
+          <label>Confirm</label>
+          <input type="text">
+  
+        </div>
+  
+        </form>
+  
+  <div class="text-center">
+   
+    <button class="btn m-2 mt-4">Submit</button>
+    <button class="btn m-2" onclick="display('section1')">Go Back
+    </button>
+  </div>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div id="section11" class="crd1">
+    <div>
+      <h1 class="heading1">SnapMed</h1>
+  </div>
+  
+  <div class="crd1 pt-1 d-flex flex-row justify-content-center">
+    <div class="wrapper">
+        <form>
+          <h1 class="mb-3 doc">Register</h1>
+          <div class="text-left">
+          <label>Full Name</label>
+          <input type="text"><br>
+          <label>Age</label>
+          <input type="number"><br>
+          <label>DOB</label>
+          <input type="date"><br>
+          <label>Aadhaar No</label>
+          <input type="text"><br>
+          <label>Gender : </label>
+          <input type="radio">
+          <label>Male</label>
+          <input type="radio">
+          <label>Female</label><br>
+          <label>Address</label>
+          <input type="text"><br>
+          <label>Driving License No</label>
+          <input type="text"><br>
+          <label>Vehicle Type</label>
+          <input type="text"><br>
+          <label>Vehicle Reg No.</label>
+          <input type="text"><br>
+          <label>Phone No.</label>
+          <input type="text"><br>
+          <label>Username</label>
+          <input type="text"><br>
+          <label>Password</label>
+          <input type="text"><br>
+          <label>Confirm</label>
+          <input type="text">
+  
+        </div>
+  
+        </form>
+  
+  <div class="text-center">
+   
+    <button class="btn m-2 mt-4">Submit</button>
+    <button class="btn m-2" onclick="display('section1')">Go Back
+    </button>
+  </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div id="section12" class="crd1">
+    <div>
+      <h1 class="heading2">SnapMed</h1>
+  </div>
+  
+    <div class="hdd2 pt-5 d-flex flex-row justify-content-center">
+      <div class="wrapper crd2">
+          <form action="">
+            <h1>Doctor View Page</h1>
+            <a>
+            <ol class="text-left p-3">
+              <li><a href="#">Health Tips</a></li>
+              <li><a href="#">Prescription</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Medicine Details</a></li>
+              <li><a href="#">Medical Bill</a></li>
+              <li><a href="#">Emergency Contacts</a></li>
+              <li><a href="#">Add Members</a></li>
+            </ol>
+          </a>
+            <button class="btn text-center mt-3" onclick="display('section8')">Vitals</button>
+            <button class="btn text-center mt-3" onclick="display('section7')">Appoinment</button>
+            
+          </form>
+        </div>
+      </div>
+  
+  </div>
+
+
+  <div id="section13" class="crd1">
+    <div>
+      <h1 class="heading2">SnapMed</h1>
+  </div>
+  
+    <div class="hdd2 pt-5 d-flex flex-row justify-content-center">
+      <div class="wrapper crd2">
+          <form action="">
+            <h1>Pharmacy View Page</h1>
+            <a>
+            <ol class="text-left p-3">
+              <li><a href="#">Add New Medicines</a></li>
+              <li><a href="#">Update Medicine Details</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">EMI</a></li>
+              <li><a href="#">Delivery Partners</a></li>
+              <li><a href="#">Records</a></li>
+              
+            </ol>
+          </a>
+            
+            <button class="btn text-center mt-3" onclick="display('section4')">Go Back</button>
+            
+          </form>
+        </div>
+      </div>
+  
+  </div>
+
+
+  <div id="section14" class="crd1">
+    <div>
+      <h1 class="heading2">SnapMed</h1>
+  </div>
+  
+    <div class="hdd2 pt-5 d-flex flex-row justify-content-center">
+      <div class="wrapper crd2">
+          <form action="">
+            <h1>Delivery View Page</h1>
+            <a>
+            <ol class="text-left p-3">
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Payment Records</a></li>
+              <li><a href="#">Update Profile</a></li>
+            </ol>
+          </a>
+            <button class="btn text-center mt-3" onclick="display('section16')">Orders</button>
+            <button class="btn text-center mt-3" onclick="display('section5')">Go Back</button>
+            
+          </form>
+        </div>
+      </div>
+  
+  </div>
+
+
+  <div id="section15" class="crd1">
+    <div>
+      <h1 class="heading2">SnapMed</h1>
+  </div>
+  
+    <div class="hdd2 pt-5 d-flex flex-row justify-content-center">
+      <div class="wrapper crd2">
+          <form action="">
+            <h1>Admin View Page</h1>
+            <a>
+            <ol class="text-left p-3">
+              <li><a href="#">Verify Medical Shop</a></li>
+              <li><a href="#">Verify Medicine Details</a></li>
+              <li><a href="#">Verify Doctor Details</a></li>
+              <li><a href="#">Add Emergency Contacts</a></li>
+              <li><a href="#">Medicine Add Health Tips</a></li>
+              <li><a href="#">View User Details</a></li>
+              <li><a href="#">Computing Setup</a></li>
+              
+            </ol>
+          </a>
+           
+            <button class="btn text-center mt-3" onclick="display('section16')">Go Back</button>
+            
+          </form>
+        </div>
+      </div>
+  
+  </div>
+
+
+  <div id="section16" class="crd1">
+    <div>
+      <h1 class="heading1">SnapMed</h1>
+  </div>
+  
+    <div class="hdd pt-auto d-flex flex-row justify-content-center">
+      <div class="wrapper">
+          <form action="">
+            <h1>Admin Login</h1>
+            <div class="input-box">
+              <input type="text" placeholder="Username / Contact No." required>
+              <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Password" required>
+              <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn" onclick="display('section15')" >Login</button>
+            <button class="btn text-center mt-3" onclick="display('section1')">Go Back</button>
+            <div class="register-link">
+              <p>Dont have an account? <a href="#" onclick="display('section9')">Register</a></p>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+  
+  </div>
+
+
+
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
